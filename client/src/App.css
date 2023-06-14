@@ -1,0 +1,149 @@
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation{
+  display: flex;
+  margin: 30px;
+  justify-content: space-between;
+}
+
+.navigation .right ul{
+  display: flex;
+  text-decoration: none;
+  gap: 10px;
+  list-style: none;
+}
+
+.navigation .right li{
+  text-decoration: none;
+  color: black;
+}
+
+.navigation .right .text-link{
+  text-decoration: none;
+}
+
+.navigation .right li:hover{
+  color: cadetblue;
+}
+
+.container .main{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .main .motto .logo{
+  flex-grow: 2;
+}
+
+.container .main .motto h3{
+  text-align: center;
+  padding-top: 50%;
+  word-spacing: .5 rem;
+  line-height: 30px;
+  color:cornflowerblue;
+}
+
+.container .main .motto span{
+  color: coral;
+}
+
+.container .footer{
+  margin: 3%;
+  text-align: center;
+  color: darkgray;
+}
+
+input{
+  width: 100%;
+}
+
+.Form{
+  margin: 10% auto;
+  max-width: 400px;
+  align-items: center;
+}
+
+.Form input{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.Form button{
+  margin: auto;
+  width: 20%;
+  display: inline-block;
+  padding: 10px;
+  align-items: center;
+  border: 2px gray;
+  border-radius: 6px;
+}
+
+.Form button:hover{
+  color:darkslategrey;
+}
+
+.Form h3{
+  text-align: center;
+  margin: 10px;
+}
+
+.Bank_Accounts{
+  margin: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.Bank_Accounts table td ,button{
+  padding: 10px;
+  margin: 20px;
+  border-bottom: 1px solid black;
+}
+
+.Bank_Accounts table tr,th{ 
+  padding: 10px;
+}
+
+.Transcation h3{
+  text-align: center;
+  margin: 10px auto;
+}
+
+.Transcation{
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.Transcation h2{
+  margin: 10px;
+}
+
+.dropbox select{
+  width: 100%;
+  margin: 10px;
+  padding: 12px 10px;
+}
+
+.Transcation .lower{
+  display: inline-block;
+  margin: 10px;
+  max-width: 600px;
+}
+
+.Transcation .lower input{
+  padding: 12px 10px;
+  width: 100%;
+}
+
+.Transcation button{
+  margin: 10px 0px;
+}
+
+

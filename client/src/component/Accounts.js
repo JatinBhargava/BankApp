@@ -10,7 +10,7 @@ const Accounts = () => {
   const [account_number,setaccountnumber] = useState('')
 
   useEffect(()=>{
-    fetch('http://localhost:4000/addaccount')
+    fetch('http://localhost:4000/accounts')
     .then(responsec => responsec.json())
     .then(data => setuser(data))
   },[])

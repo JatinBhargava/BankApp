@@ -35,7 +35,7 @@ app.post("/addaccount", async (req, res) => {
   res.json(UserDoc);
 });
 
-app.get("/addaccount", async (req, res) => {
+app.get("/accounts", async (req, res) => {
   const Users = await User.find();
   res.json(Users);
 });

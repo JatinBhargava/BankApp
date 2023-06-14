@@ -11,9 +11,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect(
-  process.env.URI
-);
+const connectDB = async() =>{
+  try {
+    await mongoose.connect(process.env.URI);
+    console.log('Connect')
+  } catch (err) {
+    console.log('Failed to connect the DB',err)
+  }
+}
+
+connectDB()
 
 app.post("/addaccount", async (req, res) => {
   const { _id, username, email, amount, account_number } = req.body;

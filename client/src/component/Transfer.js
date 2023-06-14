@@ -10,7 +10,7 @@ const Transfer = () => {
   const [formdata,setformdata] = useState()
 
   useEffect(()=>{
-    fetch('http://localhost:4000/addaccount')
+    fetch('https://backend-bankapp.onrender.com/addaccount')
     .then(responsec => responsec.json())
     .then(data => setuser(data))
   },[])
@@ -18,7 +18,7 @@ const Transfer = () => {
   const sendMoney = (e) =>{
     e.preventDefault();
 
-    fetch('http://localhost:4000/transcation',{
+    fetch('https://backend-bankapp.onrender.com/transcation',{
       method : 'POST',
       headers : {
         'Content-Type': 'application/json',

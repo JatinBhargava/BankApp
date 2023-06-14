@@ -10,7 +10,7 @@ const Accounts = () => {
   const [account_number,setaccountnumber] = useState('')
 
   useEffect(()=>{
-    fetch('http://localhost:4000/accounts')
+    fetch('https://backend-bankapp.onrender.com//accounts')
     .then(responsec => responsec.json())
     .then(data => setuser(data))
   },[])

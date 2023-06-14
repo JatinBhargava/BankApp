@@ -15,7 +15,7 @@ const AddAccount = () => {
 
     e.preventDefault();
 
-   fetch('http://localhost:4000/addaccount',{
+   fetch('https://backend-bankapp.onrender.com//addaccount',{
     method : 'POST',
     headers : {
       'Accept': 'application/json',

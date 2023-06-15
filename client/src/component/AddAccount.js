@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 let account_number = 100000;
-let _id = 1; 
 
 const AddAccount = () => {
 
@@ -22,7 +21,6 @@ const AddAccount = () => {
       'Content-Type': 'application/json',
     },
     body : JSON.stringify({
-      _id : _id++,
       username,
       email,
       amount,

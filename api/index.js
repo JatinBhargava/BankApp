@@ -24,9 +24,8 @@ connectDB();
 
 app.post("/addaccount", async (req, res) => {
   try {
-    const { _id, username, email, amount, account_number } = req.body;
+    const {username, email, amount, account_number } = req.body;
     const UserDoc = await User.create({
-      _id,
       username,
       email,
       amount,

@@ -17,7 +17,6 @@ const Accounts = () => {
     <div className="Bank_Accounts">
       <table>
         <tr>
-          <th>S.No</th>
           <th>Name</th>
           <th>Email</th>
           <th>Account Number</th>
@@ -27,7 +26,6 @@ const Accounts = () => {
         {user.map((item,id)=>{
           return(<>
             <tr key={id}>
-          <td>{item._id}</td>
           <td>{item.username}</td>
           <td>{item.email}</td>
           <td>{item.account_number}</td>

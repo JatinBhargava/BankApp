@@ -4,7 +4,7 @@ let account_number = 100000;
 
 const AddAccount = () => {
 
-  const [user,setuser] = useState('')
+  const [user,setuser] = useState(0)
   const [username,setusername] = useState('')
   const [email,setemail] = useState('')
   const [amount,setamount] = useState('')
@@ -26,9 +26,11 @@ const AddAccount = () => {
       amount,
     })
    })
-   .then(res => res.json())
-   .then(data => console.log(data))
+   .then(res => setuser(res.status))
   }
+
+  if(user === 200)
+    alert('User Created')
 
   return (
     <form className='Form' onSubmit={addUser}>

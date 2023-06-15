@@ -24,7 +24,7 @@ const AddAccount = () => {
       username,
       email,
       amount,
-      account_number : account_number++})
+    })
    })
    .then(res => res.json())
    .then(data => console.log(data))

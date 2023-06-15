@@ -4,7 +4,7 @@ const UserSchema = new mongoose.Schema({
     username : String,
     email : String,
     amount : Number,
-    account_number : Number 
+    account_number : String 
 },{
     timestamps : true
 })

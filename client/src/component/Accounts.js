@@ -4,10 +4,6 @@ import { AiOutlineDelete } from "react-icons/ai";
 const Accounts = () => {
 
   const [user,setuser] = useState([])
-  const [username,setusername] = useState('')
-  const [email,setemail] = useState('')
-  const [amount,setamount] = useState('')
-  const [account_number,setaccountnumber] = useState('')
 
   useEffect(()=>{
     fetch('https://backend-bankapp.onrender.com/accounts')
@@ -31,7 +27,7 @@ const Accounts = () => {
         {user.map((item,id)=>{
           return(<>
             <tr key={id}>
-          <td>{item.id}</td>
+          <td>{item._id}</td>
           <td>{item.username}</td>
           <td>{item.email}</td>
           <td>{item.account_number}</td>

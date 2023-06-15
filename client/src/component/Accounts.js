@@ -31,7 +31,7 @@ const Accounts = () => {
         {user.map((item,id)=>{
           return(<>
             <tr key={id}>
-          <td>1</td>
+          <td>{item.id}</td>
           <td>{item.username}</td>
           <td>{item.email}</td>
           <td>{item.account_number}</td>

@@ -10,7 +10,7 @@ const Transfer = () => {
   const [formdata,setformdata] = useState()
 
   useEffect(()=>{
-    fetch('https://backend-bankapp.onrender.com/addaccount')
+    fetch('https://backend-bankapp.onrender.com/accounts')
     .then(responsec => responsec.json())
     .then(data => setuser(data))
   },[])

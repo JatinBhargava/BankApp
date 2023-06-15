@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const User = require("./model/User");
 var bodyParser = require("body-parser");
+const {v4:uuidv4} = require('uuid')
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -29,7 +30,7 @@ app.post("/addaccount", async (req, res) => {
       username,
       email,
       amount,
-      account_number,
+      account_number : uuidv4(),
     });
 
     res.json(UserDoc);

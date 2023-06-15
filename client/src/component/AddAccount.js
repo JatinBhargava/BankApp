@@ -15,23 +15,22 @@ const AddAccount = () => {
 
     e.preventDefault();
 
-   fetch('https://backend-bankapp.onrender.com/addaccount',{
+    const response = fetch('https://backend-bankapp.onrender.com/addaccount',{
     method : 'POST',
     headers : {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
     },
-    body : JSON.stringify({_id,username,email,amount,account_number})
+    body : JSON.stringify({
+      _id : _id++,
+      username,
+      email,
+      amount,
+      account_number : account_number++})
    })
    .then(res => res.json())
    .then(data => console.log(data))
-
-   account_number++;
-   _id++;
   }
-
- 
-
 
   return (
     <form className='Form' onSubmit={addUser}>
